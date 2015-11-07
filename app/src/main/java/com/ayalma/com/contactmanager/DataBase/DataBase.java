@@ -1,8 +1,8 @@
-package DataBase;
+package com.ayalma.com.contactmanager.DataBase;
 
 import java.util.List;
 
-import Models.Contact;
+import com.ayalma.com.contactmanager.Models.Contact;
 
 /**
  * Created by ali on 11/7/15.

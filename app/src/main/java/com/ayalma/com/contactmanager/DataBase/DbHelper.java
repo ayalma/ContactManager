@@ -1,4 +1,4 @@
-package DataBase;
+package com.ayalma.com.contactmanager.DataBase;
 
 /**
  * Created by ali on 11/7/15.

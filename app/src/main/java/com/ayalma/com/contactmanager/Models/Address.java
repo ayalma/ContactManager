@@ -1,4 +1,4 @@
-package Models;
+package com.ayalma.com.contactmanager.Models;
 
 /**
  * Created by ali on 11/7/15.
