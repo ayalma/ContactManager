@@ -1,8 +1,89 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Blue Theme-->
+
+    <style name="AppTheme" parent="AppThemeBase">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="carbon_rippleColor">@color/rippleColorPrimary</item>
+        <item name="carbon_rippleColor_Inverse">@color/rippleColorPrimaryInverse</item>
+    </style>
+
+    <!--deep_orange_orange-->
+
+    <style name="AppTheme_deep_orange_orange" parent="AppThemeBase">
+        <item name="colorPrimary">@color/primary_deep_orange_orange</item>
+        <item name="colorPrimaryDark">@color/primary_dark_deep_orange_orange</item>
+        <item name="colorAccent">@color/accent_deep_orange_orange</item>
+        <item name="carbon_rippleColor">@color/rippleColorPrimary_deep_orange_orange</item>
+        <item name="carbon_rippleColor_Inverse">@color/rippleColorPrimaryInverse_deep_orange_orange</item>
+    </style>
+
+    <!--red_pink-->
+
+    <style name="AppTheme_red_pink" parent="AppThemeBase">
+        <item name="colorPrimary">@color/primary_red_pink</item>
+        <item name="colorPrimaryDark">@color/primary_dark_red_pink</item>
+        <item name="colorAccent">@color/accent_red_pink</item>
+        <item name="carbon_rippleColor">@color/rippleColorPrimary_red_pink</item>
+        <item name="carbon_rippleColor_Inverse">@color/rippleColorPrimaryInverse_red_pink</item>
+    </style>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppThemeBase" parent="carbon_Theme.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="carbon_textAppearanceTitleInverse">@style/TextAppearanceTitle</item>
+        <item name="carbon_textAppearanceTabInverse">@style/TextAppearanceTab</item>
+        <item name="carbon_textAppearanceSubhead">@style/textAppearanceSubhead</item>
+        <item name="carbon_textAppearanceSearchViewInverse">@style/TextAppearanceSearchView</item>
+        <item name="textAppearanceRecyclerViewTitle">@style/textAppearanceRecyclerViewTitle</item>
+        <item name="textAppearanceRecyclerViewSubTitle">@style/textAppearanceRecyclerViewSubTitle</item>
+        <item name="android:windowEnterAnimation">@anim/abc_slide_in_top</item>
+        <item name="android:windowExitAnimation">@anim/abc_slide_out_top</item>
+        <item name="carbon_textAppearanceTitle">@style/baseAppearance</item>
+        <item name="carbon_textAppearanceButton">@style/baseAppearance</item>
+        <item name="android:windowTranslucentStatus" tools:ignore="NewApi">true</item>
+    </style>
+<style name="baseAppearance" parent="carbon_TextAppearance">
+<item name="carbon_fontPath">"fonts/IRANSans.ttf"</item>
+</style>
+<style name="baseAppearanceLight" parent="carbon_TextAppearance">
+<item name="carbon_fontPath">"fonts/IRANSansLight.ttf"</item>
+</style>
+<style name="TextAppearanceTitle" parent="baseAppearance">
+<item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+<item name="android:textSize">25sp</item>
+</style>
+<style name="TextAppearanceTab" parent="baseAppearance">
+<item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+<item name="android:textSize">20sp</item>
+</style>
+<style name="TextAppearanceSearchView" parent="baseAppearance">
+<item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+<item name="android:textSize">20sp</item>
+</style>
+<style name="textAppearanceSubhead" parent="baseAppearance">
+<item name="android:textColor">?android:attr/textColorPrimary</item>
+<item name="android:textSize">18sp</item>
+<item name="carbon_fontPath">"fonts/IRANSans.ttf"</item>
+</style>
+<style name="textAppearanceRecyclerViewTitle" parent="baseAppearance">
+<item name="android:textColor">?android:attr/textColorPrimary</item>
+<item name="android:textSize">20sp</item>
+</style>
+<style name="textAppearanceRecyclerViewSubTitle" parent="baseAppearance">
+<item name="android:textColor">@color/secondary_text</item>
+<item name="android:textSize">18sp</item>
+</style>
+    <style name="calcButtonStyle" parent="carbon_Button.Flat">
+        <item name="carbon_rippleColor">@color/colorAccent</item>
+        <item name="carbon_rippleStyle">borderless</item>
+        <item name="carbon_rippleHotspot">false</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">30sp</item>
+        <item name="carbon_fontPath">"carbon/Roboto-Light.ttf"</item>
     </style>
 
 </resources>
